@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'free -gh'
             }
-        
+        }
         stage('Deploy') {
             steps {
                 echo "good"
