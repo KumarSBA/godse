@@ -23,12 +23,12 @@ pipeline {
         }
         stage('Ram-usage') {
             steps {
-                sh 'free -g'
+                sh 'free -gh'
             }
         
         stage('Deploy') {
             steps {
-                sh 'free -gh'
+                echo "good"
             }
         }
     }
