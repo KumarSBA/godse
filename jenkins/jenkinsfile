@@ -25,10 +25,10 @@ pipeline {
             steps {
                 sh 'free -g'
             }
-        }
+        
         stage('Deploy') {
             steps {
-                echo "deployment stage"
+                sh 'free -gh'
             }
         }
     }
